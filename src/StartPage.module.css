@@ -1,0 +1,103 @@
+p, h1, h2, h3, h4, h5, label{
+    font-family: Inter;
+}
+
+button{
+    cursor: pointer;
+}
+
+.commandName{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+}
+
+.businessName{
+    margin-top: 40px;
+    text-align: center;
+    color: #4BD759;
+}
+
+.question{
+    text-align: center;
+}
+
+.window{
+    border: 1px solid #4BD759;
+    border-radius: 20px;
+    width: 700px;
+    margin: 20px auto;
+}
+
+.windowHeader{
+    border-bottom: 1px solid #4BD759;
+    border-radius: 20px;
+    background-color: #152731;
+    height: 80px;
+}
+
+.windowHeader button{
+    font-size: 30px;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 20px;
+    color: #A39595;
+}
+
+button.activeButton{
+    color: white;
+    background-color: #0C0A2B;
+    border: 1px solid #4BD759;
+}
+
+.form{
+    padding: 20px;
+}
+
+.formFields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 40px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    padding-left: 10px;
+    color: black;
+    border-radius: 20px;
+    display: block;
+    height: 30px;
+    font-size: 20px;
+}
+
+.sendFormButton{
+    margin-top: 20px;
+    background-color: #0F381A;
+    border: 1px solid #4BD759;
+    border-radius: 20px;
+    color: white;
+    alignment: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+
+.errors{
+    color: red;
+    padding: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #4BD759;
+    padding: 10px;
+}
+
+.menuButtons{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+button{
+    background-color: #0C0A2B;
+    color: white;
+    border: 1px solid #4BD759;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.logOutButton{
+    background-color: #730D2B;
+}
+
+button.usersButton{
+    background-color: #330B42;
+}
