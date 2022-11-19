@@ -10,7 +10,7 @@ const MainUserPage = (props) => {
         <h1 className={styles.title}>Курс валют</h1>
         <div className={styles.graphsWrapper}>
             <div className={styles.graphWrapper}>
-                <h2 className={styles.graphTitle}></h2>
+                <h2 className={styles.graphTitle}>История</h2>
                 <form className={styles.intervalSelector}>
                     <label>
                         <span>С </span>
@@ -24,7 +24,7 @@ const MainUserPage = (props) => {
                 <div className={styles.graphCanvas}></div>
             </div>
             <div className={styles.graphWrapper}>
-                <h2 className={styles.graphTitle}></h2>
+                <h2 className={styles.graphTitle}>Прогноз</h2>
                 <div className={styles.graphCanvas}></div>
             </div>
         </div>
@@ -36,7 +36,7 @@ const MainUserPage = (props) => {
             </div>
             <p className={styles.balance}>У Вас {amount} евро</p>
             <form className={styles.exchangeForm}>
-                <input inputMode="numeric" className={styles.amountField}/>
+                <input type="number" className={styles.amountField}/>
                 <button type="button" className={styles.exchangeButton}>Обновить</button>
             </form>
         </div>
