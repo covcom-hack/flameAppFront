@@ -37,7 +37,7 @@ const MainUserPage = (props) => {
             <p className={styles.balance}>У Вас {amount} евро</p>
             <form className={styles.exchangeForm}>
                 <input type="number" className={styles.amountField}/>
-                <button type="button" className={styles.exchangeButton}>Обновить</button>
+                <button type="button" className={styles.exchangeButton}>Обменять</button>
             </form>
         </div>
     </>);

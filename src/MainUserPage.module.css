@@ -32,12 +32,13 @@
     align-items: center;
     gap: 10px;
     width: 40%;
+    margin-bottom: 10px;
 }
 
 .graphCanvas{
     display: block;
     height: 300px;
-    width: 400px;
+    width: 500px;
     border: 1px solid #4BD759;
 }
 

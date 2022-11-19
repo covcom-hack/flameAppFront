@@ -7,6 +7,7 @@ import {
 import StartPage from "./StartPage";
 import MainUserPage from "./MainUserPage";
 import MainAdminPage from "./MainAdminPage";
+import UserProfile from "./UserProfile";
 
 function App() {
   const [token, setToken] = useState();
@@ -17,6 +18,7 @@ function App() {
 
   return (<BrowserRouter>
     <Routes>
+      <Route path="/profile" element={<UserProfile />} />
       <Route path="/main" element={<MainUserPage />} />
       <Route path="/" element={<StartPage />} />
     </Routes>
