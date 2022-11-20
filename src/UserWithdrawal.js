@@ -14,32 +14,35 @@ const UserWithdrawal = (props) => {
             <div className={styles.fieldsWrapper}>
                 <div className={styles.bankCardTop}>
                     <label>
-                        <span>Номер карты:</span>
+                        <span className={styles.label}>Номер карты:</span>
                         <input
                             name="cardNumber"
                             type="number"
                             value={cardNumber}
-                            onChange={e => setCardNumber(e.target.value.toString)} />
+                            onChange={e => setCardNumber(e.target.value.toString)}
+                            className={styles.cardInputField}/>
                     </label>
                 </div>
                 <div className={styles.bankCardBottom}>
                     <label>
-                        <span>Срок:</span>
+                        <span className={styles.label}>Срок:</span>
                         <input
                             name="date"
                             type="number"
                             minLength={4}
                             maxLength={4}
                             value={date}
-                            onChange={e => setDate(e.target.value.toString)} />
+                            onChange={e => setDate(e.target.value.toString)}
+                            className={styles.cardInputField}/>
                     </label>
                     <label>
-                        <span>CVC:</span>
+                        <span className={styles.label}>CVC:</span>
                         <input
                             name="cvc"
                             type="number"
                             value={cvc}
-                            onChange={e => setCVC(e.target.value.toString)} />
+                            onChange={e => setCVC(e.target.value.toString)}
+                            className={styles.cardInputField}/>
                     </label>
                 </div>
             </div>
@@ -47,15 +50,16 @@ const UserWithdrawal = (props) => {
 
         <div className={styles.amountInputForm}>
             <div className={styles.amountInputFormTop}>
-                <p>Сумма:</p>
+                <p className={styles.label}>Сумма:</p>
             </div>
             <div className={styles.amountInputFormBottom}>
                 <input
                     name="amount"
                     type="number"
                     value={amount}
-                    onChange={e => setAmount(e.target.value)} />
-                <button type="button">Пополнить</button>
+                    onChange={e => setAmount(e.target.value)}
+                    className={styles.amountField}/>
+                <button type="button" className={styles.actionButton}>Пополнить</button>
             </div>
         </div>
     </>);

@@ -25,8 +25,36 @@
     gap: 20px;
 }
 
+.cardInputField{
+    height: 35px;
+}
+
 .amountInputForm{
     display: block;
     margin: 50px auto 30px auto;
     width: 400px;
+}
+
+.amountInputFormTop{}
+
+.label{
+    margin: 0;
+}
+
+.amountInputFormBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amountField{
+    height: 30px;
+    font-size: 15px;
+    width: 65%;
+}
+
+.actionButton{
+    background-color: #330B42;
+    padding: 20px 12px;
 }
