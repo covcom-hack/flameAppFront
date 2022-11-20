@@ -1,0 +1,32 @@
+.bankCard{
+    display: block;
+    margin: 50px auto 30px auto;
+    width: 500px;
+    height: 250px;
+    border: 1px solid #4BD759;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.fieldsWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.bankCardTop{}
+
+.bankCardBottom{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.amountInputForm{
+    display: block;
+    margin: 50px auto 30px auto;
+    width: 400px;
+}

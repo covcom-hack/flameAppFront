@@ -49,7 +49,7 @@ const StartPage = (props) => {
                             <input
                                 name="login"
                                 type="text"
-                                minLength={8}
+                                minLength={4}
                                 value={login}
                                 onChange={e => setLogin(e.target.value)} />
                         </label>
@@ -58,7 +58,7 @@ const StartPage = (props) => {
                             <input
                                 name="password"
                                 type="password"
-                                minLength={8}
+                                minLength={4}
                                 value={password}
                                 onChange={e => setPassword(e.target.value)} />
                         </label>
@@ -130,7 +130,7 @@ const StartPage = (props) => {
                                 name="login"
                                 type="text"
                                 value={login}
-                                minLength={8}
+                                minLength={4}
                                 onChange={e => setLogin(e.target.value)} />
                         </label>
                         <label>
@@ -139,7 +139,7 @@ const StartPage = (props) => {
                                 name="password"
                                 type="password"
                                 value={password}
-                                minLength={8}
+                                minLength={4}
                                 onChange={e => setPassword(e.target.value)} />
                         </label>
                     </div>

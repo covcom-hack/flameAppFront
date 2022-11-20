@@ -6,8 +6,10 @@ import {
 } from "react-router-dom";
 import StartPage from "./StartPage";
 import MainUserPage from "./MainUserPage";
-import MainAdminPage from "./MainAdminPage";
 import UserProfile from "./UserProfile";
+import UserHistory from "./UserHistory";
+import UserWithdrawal from "./UserWithdrawal";
+import UserDeposit from "./UserDeposit";
 
 function App() {
   const [token, setToken] = useState();
@@ -18,6 +20,9 @@ function App() {
 
   return (<BrowserRouter>
     <Routes>
+      <Route path="/withdrawal" element={<UserWithdrawal />} />
+      <Route path="/deposit" element={<UserDeposit />} />
+      <Route path="/history" element={<UserHistory />} />
       <Route path="/profile" element={<UserProfile />} />
       <Route path="/main" element={<MainUserPage />} />
       <Route path="/" element={<StartPage />} />

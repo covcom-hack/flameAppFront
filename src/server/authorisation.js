@@ -1,6 +1,4 @@
-import {useNavigate} from "react-router-dom";
-
-const server = "https://google.com";
+const server = "http://localhost:8080/flame/api";
 
 export function Response(res){
     this.jwt = res.jwt;
