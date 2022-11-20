@@ -59,7 +59,7 @@ const UserDeposit = (props) => {
                     value={amount}
                     onChange={e => setAmount(e.target.value)}
                     className={styles.amountField}/>
-                <button type="button" className={styles.actionButton}>Вывести</button>
+                <button type="button" className={styles.actionButton}>Пополнить</button>
             </div>
         </div>
     </>);
