@@ -29,6 +29,10 @@ button{
     font-weight: 600;
 }
 
+.menuButtons button:active{
+    background-color: #06042a;
+}
+
 button.logOutButton{
     background-color: #730D2B;
 }
