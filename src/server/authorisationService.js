@@ -17,7 +17,7 @@ export function AuthorisationService(){
                     this.setJWT(response.jwtResponse.accessToken);
                     return {isSuccessful: true};
                 }
-                return {isSuccessful: false, error: response.message};
+                return {isSuccessful: false, error: JSON.stringify(response)};
         }).catch(err => {console.log(err); return {isSuccessful: false, error: err.message};});
     }
 }

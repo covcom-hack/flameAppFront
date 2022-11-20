@@ -6,7 +6,7 @@ const UserDeposit = (props) => {
     const [cardNumber, setCardNumber] = useState('');
     const [date, setDate] = useState('');
     const [cvc, setCVC] = useState('');
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState('');
 
     return (<>
         <UserHeader/>
@@ -19,7 +19,7 @@ const UserDeposit = (props) => {
                             name="cardNumber"
                             type="number"
                             value={cardNumber}
-                            onChange={e => setCardNumber(e.target.value.toString)}
+                            onChange={e => setCardNumber(e.target.value.toString())}
                             className={styles.cardInputField}/>
                     </label>
                 </div>
@@ -32,7 +32,7 @@ const UserDeposit = (props) => {
                             minLength={4}
                             maxLength={4}
                             value={date}
-                            onChange={e => setDate(e.target.value.toString)}
+                            onChange={e => setDate(e.target.value.toString())}
                             className={styles.cardInputField}/>
                     </label>
                     <label>
@@ -41,7 +41,7 @@ const UserDeposit = (props) => {
                             name="cvc"
                             type="number"
                             value={cvc}
-                            onChange={e => setCVC(e.target.value.toString)}
+                            onChange={e => setCVC(e.target.value.toString())}
                             className={styles.cardInputField}/>
                     </label>
                 </div>
