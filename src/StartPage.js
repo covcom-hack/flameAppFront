@@ -1,7 +1,8 @@
 import styles from "./StartPage.module.css";
 import {useNavigate} from 'react-router-dom';
 import {useEffect, useState} from "react";
-import {hasJWT, logIn, register} from "./server/authorisation";
+import {hasJWT, register} from "./server/authorisation";
+import {AuthorisationService} from "./server/authorisationService";
 
 const StartPage = (props) => {
     const navigate = useNavigate();
@@ -21,7 +22,7 @@ const StartPage = (props) => {
     const [phoneNumber, setPhoneNumber] = useState('');
 
     const [response, setResponse] = useState(null);
-    const logInAction = () => logIn(login, password).then(r => {
+    const logInAction = () => new AuthorisationService().logIn(login, password).then(r => {
         setResponse(r);
         if (r.isSuccessful)
             navigate('/main');
